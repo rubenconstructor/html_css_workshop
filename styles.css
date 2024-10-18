@@ -1,0 +1,87 @@
+
+
+/* element selector */
+h1 {
+    color: cadetblue;
+    background-color: beige;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* class selector */
+.first-long-text {
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+/* ID selector */
+#second-hello {
+    color: brown;
+}
+
+/* Styling child elements */
+header > div > button {
+    background-color: rgb(255, 100, 255);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 120px;
+    border: 2px black solid;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Hover pseudo selector */
+header > div > button:hover {
+    background-color: rgb(255, 100, 255, 0.5);
+}
+
+/* Display Flex for positioning */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.header-left-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-right-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.two-p-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.two-p-div > p {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 50%;
+}
+
+/* Display grid for positioning */
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Media query to apply styles only for certain screen sizes */
+@media only screen and (min-width: 600px) {
+    header {
+        background-color: cornflowerblue;
+    }
+}
